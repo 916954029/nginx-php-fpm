@@ -1,7 +1,5 @@
 ## 概览
 
----
-
 基于镜像 [richarvey/nginx-php-fpm:1.10.3](https://hub.docker.com/layers/richarvey/nginx-php-fpm/1.10.3/images/sha256-7208dee287a4dc964538d04f3763bb6588b6c5832eba0dec74ed0768cd6b85e0?context=explore) 编写的 docker-compose 化开发环境
 
 **软件版本**
@@ -12,16 +10,12 @@
 
 ## 目录说明
 
----
-
 - `./conf/nginx/sites-enabled`： 存放 nginx 虚拟主机配置
 - `./conf/nginx/sites-enabled/local.thinkcmf.conf`： nginx 虚拟主机参考配置文件（thinkcmf6.0）
 - `./conf/nginx/cert`： 存放 ssl 证书和私钥文件
 - `./scripts`： 存放自定义脚本，在 php-fpm 和 nginx 进程启动之前会被执行
 
 ## 开启 xdebug （phpstorm 可使用）
-
----
 
 打开根目录下 `.env` 配置文件中的以下环境变量
 
@@ -34,8 +28,6 @@
 **注意**： 开启 xdebug 扩展时需等待其安装完成才可访问网站。
 
 ## 命令参考
-
----
 
 - `sudo docker-compose up -d` 创建并启动环境
 - `sudo docker-compose down` 关闭环境并删除容器、网络、镜像和卷
