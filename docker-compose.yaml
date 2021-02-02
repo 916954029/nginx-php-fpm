@@ -7,10 +7,9 @@ services:
     ports:
       - "80:80"
       - "443:443"
-      - "9000:9000"
     env_file: .env
     volumes:
-      - ../:/var/www/html
+      - ./src:/var/www/html
       - ./conf/nginx/sites-enabled:/etc/nginx/sites-enabled
       - ./conf/nginx/cert:/etc/nginx/cert
       - ./scripts:/var/www/html/scripts

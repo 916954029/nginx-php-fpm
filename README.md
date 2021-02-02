@@ -2,16 +2,20 @@
 
 基于镜像 [richarvey/nginx-php-fpm:1.10.3](https://hub.docker.com/layers/richarvey/nginx-php-fpm/1.10.3/images/sha256-7208dee287a4dc964538d04f3763bb6588b6c5832eba0dec74ed0768cd6b85e0?context=explore) 编写的 docker-compose 化开发环境
 
-**软件版本**
+**镜像介绍**
 
 - **os**: Alpine Linux v3.12
 - **nginx**: 1.18.0
 - **php**: 7.4.9
 
+**docker版本要求**
+
+1.13.0+
+
 ## 目录说明
 
+- `./src`： 项目存放路径
 - `./conf/nginx/sites-enabled`： 存放 nginx 虚拟主机配置
-- `./conf/nginx/sites-enabled/local.thinkcmf.conf`： nginx 虚拟主机参考配置文件（thinkcmf6.0）
 - `./conf/nginx/cert`： 存放 ssl 证书和私钥文件
 - `./scripts`： 存放自定义脚本，在 php-fpm 和 nginx 进程启动之前会被执行
 
