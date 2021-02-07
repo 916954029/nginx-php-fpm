@@ -12,4 +12,3 @@ services:
       - ./src:/var/www/html
       - ./conf/nginx/sites-enabled:/etc/nginx/sites-enabled
       - ./conf/nginx/cert:/etc/nginx/cert
-      - ./scripts:/var/www/html/scripts

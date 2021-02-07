@@ -15,9 +15,9 @@
 ## 目录说明
 
 - `./src`： 项目存放路径
+- `./src/scripts`： 存放自定义脚本，在 php-fpm 和 nginx 进程启动之前会被执行
 - `./conf/nginx/sites-enabled`： 存放 nginx 虚拟主机配置
 - `./conf/nginx/cert`： 存放 ssl 证书和私钥文件
-- `./scripts`： 存放自定义脚本，在 php-fpm 和 nginx 进程启动之前会被执行
 
 ## 开启 xdebug （phpstorm 可使用）
 
