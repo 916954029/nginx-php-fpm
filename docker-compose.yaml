@@ -12,3 +12,5 @@ services:
       - ./src:/var/www/html
       - ./conf/nginx/sites-enabled:/etc/nginx/sites-enabled
       - ./conf/nginx/cert:/etc/nginx/cert
+      - ./conf/php/timezone:/etc/TZ
+      - ./logs:/etc/nginx/logs
