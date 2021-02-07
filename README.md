@@ -19,7 +19,11 @@
 - `./conf/nginx/sites-enabled`： 存放 nginx 虚拟主机配置
 - `./conf/nginx/cert`： 存放 ssl 证书和私钥文件
 
-## 开启 xdebug （phpstorm 可使用）
+## 自定义环境变量
+
+执行 `cp .env.example .env` 命令创建环境变量自定义文件，根据需求修改。
+
+## 关于开启 xdebug （phpstorm 可使用）
 
 打开根目录下 `.env` 配置文件中的以下环境变量
 
