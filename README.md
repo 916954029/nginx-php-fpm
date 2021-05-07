@@ -41,6 +41,6 @@
 - `sudo docker-compose down` 关闭环境并删除容器、网络、镜像和卷
 - `sudo docker-compose ps` 运行中的容器列表
 - `sudo docker-compose top` 容器内的运行进程
-- `sudo docker-compose cp local-alnp:/path/in/container /path/in/host` 从容器内向宿主机拷贝文件
+- `sudo docker cp local-alnp:/path/in/container /path/in/host` 从容器内向宿主机拷贝文件
 - `sudo docker-compose exec -it local-alnp /bin/bash` 登录容器
 - `sudo docker-compose logs` 打印容器输出的日志
